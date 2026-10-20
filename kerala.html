@@ -1,0 +1,587 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kerala | Roots of India</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Georgia, "Times New Roman", serif;
+            background-color: #f8f1e5;
+            color: #443126;
+            line-height: 1.7;
+        }
+
+        header {
+            background-color: #743b27;
+            color: #fff4df;
+            padding: 18px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+
+        header h2 {
+            font-size: 25px;
+        }
+
+        nav {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 18px;
+        }
+
+        nav a {
+            color: #fff4df;
+            text-decoration: none;
+            font-size: 15px;
+        }
+
+        nav a:hover {
+            color: #f2c078;
+        }
+
+        .hero {
+            min-height: 350px;
+            padding: 75px 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+            background:
+                linear-gradient(rgba(35, 35, 20, 0.55),
+                                rgba(35, 35, 20, 0.65)),
+                url("https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?auto=format&fit=crop&w=1600&q=80");
+            background-size: cover;
+            background-position: center;
+        }
+
+        .hero h1 {
+            font-size: clamp(38px, 6vw, 60px);
+            margin-bottom: 12px;
+        }
+
+        .hero p {
+            font-size: 19px;
+            max-width: 700px;
+        }
+
+        section {
+            display: block;
+            padding: 55px 8%;
+            scroll-margin-top: 20px;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 32px;
+            color: #743b27;
+            margin-bottom: 12px;
+        }
+
+        .section-intro {
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto 30px;
+        }
+
+        .intro {
+            text-align: center;
+            background-color: #fffaf1;
+        }
+
+        .intro p {
+            max-width: 900px;
+            margin: 15px auto 0;
+        }
+
+        .decorative-line {
+            width: 85px;
+            height: 3px;
+            background-color: #bd7b37;
+            margin: 15px auto 25px;
+        }
+
+        .card-grid {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 25px;
+            margin-top: 30px;
+        }
+
+        .culture-card {
+            background: #fffaf1;
+            border: 1px solid #e5d2b7;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 12px rgba(76, 46, 28, 0.08);
+        }
+
+        .culture-card img {
+            display: block;
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+            background-color: #e7d5bd;
+        }
+
+        .card-content {
+            padding: 20px;
+        }
+
+        .card-content h3 {
+            color: #85472c;
+            font-size: 22px;
+            margin-bottom: 8px;
+        }
+
+        .card-content p {
+            font-size: 15px;
+        }
+
+        .traditions {
+            background-color: #efe1cb;
+        }
+
+        .festivals {
+            background-color: #fffaf1;
+        }
+
+        .food {
+            background-color: #efe1cb;
+        }
+
+        .identity {
+            text-align: center;
+            background-color: #743b27;
+            color: #fff4df;
+        }
+
+        .identity .section-title {
+            color: #fff4df;
+        }
+
+        .identity p {
+            max-width: 850px;
+            margin: 15px auto;
+        }
+
+        footer {
+            background-color: #3c291f;
+            color: #f8e9d0;
+            text-align: center;
+            padding: 22px 15px;
+            font-size: 14px;
+        }
+
+        footer a {
+            color: #f2c078;
+            text-decoration: none;
+        }
+
+        @media (max-width: 650px) {
+            header {
+                justify-content: center;
+                text-align: center;
+            }
+
+            nav {
+                justify-content: center;
+            }
+
+            .card-grid {
+                grid-template-columns: 1fr;
+            }
+
+            section {
+                padding: 40px 6%;
+            }
+
+            .section-title {
+                font-size: 27px;
+            }
+
+            .culture-card img {
+                height: 200px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <h2>❖ Roots of India</h2>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="#heritage">Heritage Sites</a>
+            <a href="#traditions">Traditions</a>
+            <a href="#festivals">Festivals</a>
+            <a href="#food">Food</a>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <div class="hero">
+        <h1>Kerala</h1>
+        <p>Explore the natural beauty, ancient heritage and living traditions of God's Own Country.</p>
+    </div>
+
+    <!-- Introduction -->
+    <section class="intro">
+        <h2 class="section-title">A Land of Nature and Tradition</h2>
+        <div class="decorative-line"></div>
+
+        <p>
+            Kerala is a beautiful state in southwestern India, known for its
+            green landscapes, backwaters, temples, historic architecture and
+            rich cultural traditions. Its heritage includes classical dance,
+            traditional martial arts, colourful festivals and distinctive
+            cuisine. Kerala's cultural identity reflects the knowledge,
+            creativity and community life passed down through generations.
+        </p>
+    </section>
+
+    <!-- Heritage Sites -->
+    <section id="heritage">
+        <h2 class="section-title">Historical Heritage Sites</h2>
+        <div class="decorative-line"></div>
+
+        <p class="section-intro">
+            Kerala's historic palaces, forts and religious monuments reveal
+            the state's architectural beauty and cultural history.
+        </p>
+
+        <div class="card-grid">
+
+            <article class="culture-card">
+                <img
+                    src="https://i.pinimg.com/736x/a8/39/4f/a8394fa9408e2472f0672f2bb515d9db.jpg"
+                    alt="Kerala landscape and traditional architecture">
+                <div class="card-content">
+                    <h3>Padmanabhaswamy Temple</h3>
+                    <p>
+                        Located in Thiruvananthapuram, this famous temple is
+                        dedicated to Lord Vishnu. Its traditional Kerala
+                        architecture and detailed stonework make it an
+                        important religious and cultural landmark.
+                    </p>
+                </div>
+            </article>
+
+            <article class="culture-card">
+                <img
+                    src="https://i.pinimg.com/736x/eb/3f/71/eb3f7169c9c07ac9a0315e7c7eb1f888.jpg"
+                    alt="Historic fort architecture">
+                <div class="card-content">
+                    <h3>Bekal Fort</h3>
+                    <p>
+                        Situated in Kasaragod, Bekal Fort is a large coastal
+                        fort overlooking the Arabian Sea. Its defensive
+                        structures and sea views reflect Kerala's historic
+                        coastal importance.
+                    </p>
+                </div>
+            </article>
+
+            <article class="culture-card">
+                <img
+                    src="https://i.pinimg.com/1200x/af/0a/f1/af0af1ee6ea48f43937dac6799f8e241.jpg"
+                    alt="Traditional Indian palace architecture">
+                <div class="card-content">
+                    <h3>Mattancherry Palace</h3>
+                    <p>
+                        Also known as the Dutch Palace, this historic building
+                        in Kochi is known for its murals, traditional interiors
+                        and connection to the region's royal history.
+                    </p>
+                </div>
+            </article>
+
+            <article class="culture-card">
+                <img
+                    src="https://i.pinimg.com/1200x/7b/7b/ff/7b7bff7d873a8e7c949ff6d9e7f59b64.jpg"
+                    alt="Historic Indian religious architecture">
+                <div class="card-content">
+                    <h3>St. Francis Church</h3>
+                    <p>
+                        Located in Fort Kochi, St. Francis Church is one of
+                        India's historically significant European-built
+                        churches. It reflects the maritime connections and
+                        colonial history of the Kerala coast.
+                    </p>
+                </div>
+            </article>
+
+        </div>
+    </section>
+
+    <!-- Traditions -->
+    
+<!-- Traditions -->
+<section class="traditions" id="traditions">
+    <h2 class="section-title">Traditions &amp; Folk Culture</h2>
+    <div class="decorative-line"></div>
+
+    <p class="section-intro">
+        Kerala preserves its cultural identity through classical dance,
+        traditional performances, martial arts and handicrafts.
+    </p>
+
+    <div class="card-grid">
+
+        <article class="culture-card">
+            <div class="card-content">
+                <h3>Kathakali</h3>
+                <p>
+                    Kathakali is a classical dance-drama known for its
+                    elaborate costumes, colourful makeup, expressive
+                    eyes and hand gestures. It presents stories from
+                    Indian epics and traditional literature.
+                </p>
+            </div>
+        </article>
+
+        <article class="culture-card">
+            <div class="card-content">
+                <h3>Mohiniyattam</h3>
+                <p>
+                    Mohiniyattam is a classical dance form from Kerala,
+                    recognised for its graceful movements, gentle
+                    expressions and flowing white-and-gold costumes.
+                </p>
+            </div>
+        </article>
+
+        <article class="culture-card">
+            <div class="card-content">
+                <h3>Mural Painting</h3>
+                <p>
+                    Kerala mural art is known for detailed figures,
+                    traditional themes and rich natural colours.
+                    These paintings can be found in temples, palaces
+                    and cultural collections.
+                </p>
+            </div>
+        </article>
+
+        <article class="culture-card">
+            <div class="card-content">
+                <h3>Traditional Handloom</h3>
+                <p>
+                    Kerala's handloom traditions include Kasavu fabric,
+                    often recognised by its cream or off-white cloth
+                    and golden border. These textiles are commonly
+                    worn during celebrations.
+                </p>
+            </div>
+        </article>
+
+    </div>
+</section>
+
+
+    <!-- Festivals -->
+    <section class="festivals" id="festivals">
+        <h2 class="section-title">Festivals of Kerala</h2>
+        <div class="decorative-line"></div>
+
+        <p class="section-intro">
+            Kerala's festivals celebrate harvests, mythology, community
+            life and the state's diverse cultural traditions.
+        </p>
+
+        <div class="card-grid">
+
+            <article class="culture-card">
+                <div class="card-content">
+                    <h3>Onam</h3>
+                    <p>
+                        Onam is Kerala's major harvest festival, associated
+                        with the legend of King Mahabali. Celebrations include
+                        flower carpets called pookalam, traditional feasts,
+                        cultural performances and boat races.
+                    </p>
+                </div>
+            </article>
+
+            <article class="culture-card">
+                <div class="card-content">
+                    <h3>Vishu</h3>
+                    <p>
+                        Vishu marks the traditional Malayalam New Year
+                        celebration for many people in Kerala. The Vishukkani,
+                        festive meals and the exchange of Vishukkaineettam
+                        are important customs.
+                    </p>
+                </div>
+            </article>
+
+            <article class="culture-card">
+                <div class="card-content">
+                    <h3>Thrissur Pooram</h3>
+                    <p>
+                        Thrissur Pooram is a famous temple festival known
+                        for colourful parasols, traditional percussion
+                        ensembles and grand processions.
+                    </p>
+                </div>
+            </article>
+
+            <article class="culture-card">
+                <div class="card-content">
+                    <h3>Vallam Kali</h3>
+                    <p>
+                        Vallam Kali refers to traditional boat races held
+                        in Kerala's waterways. Teams row decorated boats
+                        together, accompanied by songs and enthusiastic
+                        community support.
+                    </p>
+                </div>
+            </article>
+
+        </div>
+    </section>
+
+    <!-- Food -->
+    
+<!-- Traditional Food -->
+<section class="food" id="food">
+    <h2 class="section-title">Traditional Food of Kerala</h2>
+    <div class="decorative-line"></div>
+
+    <p class="section-intro">
+        Kerala cuisine is known for rice, coconut, spices and
+        traditional recipes passed down through generations.
+    </p>
+
+    <div class="card-grid">
+
+        <article class="culture-card">
+            <img src="https://i.pinimg.com/736x/87/32/62/873262d863b89f7f6029478ed7f3dc1e.jpg"
+                 alt="Traditional Indian meal">
+            <div class="card-content">
+                <h3>Kerala Sadya</h3>
+                <p>
+                    Sadya is a traditional vegetarian feast served on
+                    a banana leaf. It includes rice, curries, vegetables,
+                    pickles, papadam and desserts.
+                </p>
+            </div>
+        </article>
+
+        <article class="culture-card">
+            <img src="https://i.pinimg.com/736x/bb/12/55/bb12551c4c7173ebab72a95582b27f2c.jpg"
+                 alt="Appam and traditional curry">
+            <div class="card-content">
+                <h3>Appam with Stew</h3>
+                <p>
+                    Appam is a soft rice pancake with delicate edges.
+                    It is often served with a mild coconut-milk stew
+                    made with vegetables or meat.
+                </p>
+            </div>
+        </article>
+
+        <article class="culture-card">
+            <img src="https://i.pinimg.com/1200x/ce/36/a1/ce36a10642838e3450f20ce1134c1571.jpg"
+                 alt="Puttu and curry style meal">
+            <div class="card-content">
+                <h3>Puttu and Kadala Curry</h3>
+                <p>
+                    Puttu is made with steamed rice flour and coconut.
+                    It is commonly served with kadala curry prepared
+                    from black chickpeas and spices.
+                </p>
+            </div>
+        </article>
+
+        <article class="culture-card">
+            <img src="https://i.pinimg.com/1200x/c9/83/e9/c983e9bbddc02f0d9ad410f217be3009.jpg"
+                 alt="Biryani rice dish">
+            <div class="card-content">
+                <h3>Malabar Biryani</h3>
+                <p>
+                    This popular regional rice dish combines aromatic
+                    spices with rice and meat or other ingredients.
+                    Recipes vary throughout the Malabar region.
+                </p>
+            </div>
+        </article>
+
+        <article class="culture-card">
+            <img src="https://i.pinimg.com/1200x/fc/ef/54/fcef540da210e56c34413ded0437cd06.jpg"
+                 alt="Traditional dessert">
+            <div class="card-content">
+                <h3>Palada Payasam</h3>
+                <p>
+                    Palada payasam is a traditional Kerala dessert made
+                    with rice ada, milk and sugar. It is often prepared
+                    for festive meals and special occasions.
+                </p>
+            </div>
+        </article>
+
+        <article class="culture-card">
+            <img src="https://i.pinimg.com/736x/10/db/f2/10dbf237ce2c5a0e79160992f9cb126a.jpg"
+                 alt="Crispy chips">
+            <div class="card-content">
+                <h3>Banana Chips</h3>
+                <p>
+                    Thin slices of banana are fried until crisp to make
+                    this popular Kerala snack, which is also served
+                    during festivals and special meals.
+                </p>
+            </div>
+        </article>
+
+    </div>
+</section>
+
+
+    <!-- Cultural Identity -->
+    <section class="identity">
+        <h2 class="section-title">Preserving Kerala's Heritage</h2>
+        <div class="decorative-line"></div>
+
+        <p>
+            Kerala's heritage lives through its historic monuments,
+            performing arts, handloom traditions, festivals, cuisine
+            and community stories.
+        </p>
+
+        <p>
+            We can help preserve this cultural wealth by documenting
+            local traditions, supporting artists and craftspeople,
+            caring for historic sites and sharing traditional knowledge
+            with future generations.
+        </p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>❖ Roots of India | Documentation and Preservation of Local Cultural Heritage</p>
+        <p>Celebrating Kerala's history, traditions and cultural identity.</p>
+        <p><a href="index.html">Back to Home</a></p>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,594 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assam | Roots of India</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Georgia, "Times New Roman", serif;
+            background-color: #f8f1e5;
+            color: #443126;
+            line-height: 1.7;
+        }
+
+        header {
+            background-color: #743b27;
+            color: #fff4df;
+            padding: 18px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+
+        header h2 {
+            font-size: 25px;
+        }
+
+        nav {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 18px;
+        }
+
+        nav a {
+            color: #fff4df;
+            text-decoration: none;
+            font-size: 15px;
+        }
+
+        nav a:hover {
+            color: #f2c078;
+        }
+
+        .hero {
+            min-height: 350px;
+            padding: 75px 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+            background:
+                linear-gradient(rgba(35, 35, 20, 0.55),
+                                rgba(35, 35, 20, 0.65)),
+                url("https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1600&q=80");
+            background-size: cover;
+            background-position: center;
+        }
+
+        .hero h1 {
+            font-size: clamp(38px, 6vw, 60px);
+            margin-bottom: 12px;
+        }
+
+        .hero p {
+            font-size: 19px;
+            max-width: 700px;
+        }
+
+        section {
+            display: block;
+            padding: 55px 8%;
+            scroll-margin-top: 20px;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 32px;
+            color: #743b27;
+            margin-bottom: 12px;
+        }
+
+        .section-intro {
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto 30px;
+        }
+
+        .intro {
+            text-align: center;
+            background-color: #fffaf1;
+        }
+
+        .intro p {
+            max-width: 900px;
+            margin: 15px auto 0;
+        }
+
+        .decorative-line {
+            width: 85px;
+            height: 3px;
+            background-color: #bd7b37;
+            margin: 15px auto 25px;
+        }
+
+        .card-grid {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 25px;
+            margin-top: 30px;
+        }
+
+        .culture-card {
+            background: #fffaf1;
+            border: 1px solid #e5d2b7;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 12px rgba(76, 46, 28, 0.08);
+        }
+
+        .culture-card img {
+            display: block;
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+            background-color: #e7d5bd;
+        }
+
+        .card-content {
+            padding: 20px;
+        }
+
+        .card-content h3 {
+            color: #85472c;
+            font-size: 22px;
+            margin-bottom: 8px;
+        }
+
+        .card-content p {
+            font-size: 15px;
+        }
+
+        .traditions {
+            background-color: #efe1cb;
+        }
+
+        .festivals {
+            background-color: #fffaf1;
+        }
+
+        .food {
+            background-color: #efe1cb;
+        }
+
+        .identity {
+            text-align: center;
+            background-color: #743b27;
+            color: #fff4df;
+        }
+
+        .identity .section-title {
+            color: #fff4df;
+        }
+
+        .identity p {
+            max-width: 850px;
+            margin: 15px auto;
+        }
+
+        footer {
+            background-color: #3c291f;
+            color: #f8e9d0;
+            text-align: center;
+            padding: 22px 15px;
+            font-size: 14px;
+        }
+
+        footer a {
+            color: #f2c078;
+            text-decoration: none;
+        }
+
+        @media (max-width: 650px) {
+            header {
+                justify-content: center;
+                text-align: center;
+            }
+
+            nav {
+                justify-content: center;
+            }
+
+            .card-grid {
+                grid-template-columns: 1fr;
+            }
+
+            section {
+                padding: 40px 6%;
+            }
+
+            .section-title {
+                font-size: 27px;
+            }
+
+            .culture-card img {
+                height: 200px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <h2>❖ Roots of India</h2>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="#heritage">Heritage Sites</a>
+            <a href="#traditions">Traditions</a>
+            <a href="#festivals">Festivals</a>
+            <a href="#food">Food</a>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <div class="hero">
+        <h1>Assam</h1>
+        <p>Discover the ancient monuments, vibrant traditions and natural beauty of Assam.</p>
+    </div>
+
+    <!-- Introduction -->
+    <section class="intro">
+        <h2 class="section-title">A Land of Culture and Nature</h2>
+        <div class="decorative-line"></div>
+
+        <p>
+            Assam is a state in northeastern India, known for its tea gardens,
+            the Brahmaputra River, wildlife and rich cultural heritage.
+            Its traditions include the famous Bihu dance, handwoven textiles,
+            traditional crafts and distinctive cuisine. Assam's history
+            reflects the legacy of the Ahom kingdom and the diverse communities
+            that have shaped the region. Preserving these traditions helps
+            future generations understand and appreciate its cultural identity.
+        </p>
+    </section>
+
+    <!-- Heritage Sites -->
+    <section id="heritage">
+        <h2 class="section-title">Historical Heritage Sites</h2>
+        <div class="decorative-line"></div>
+
+        <p class="section-intro">
+            Assam's temples, historic buildings and archaeological sites
+            reveal its religious, artistic and political history.
+        </p>
+
+        <div class="card-grid">
+
+            <article class="culture-card">
+                <img
+                    src="https://i.pinimg.com/1200x/41/28/da/4128da022c971cafccc236bf87ceabce.jpg"
+                    alt="Historic Indian stone architecture">
+                <div class="card-content">
+                    <h3>Kamakhya Temple</h3>
+                    <p>
+                        Located on Nilachal Hill in Guwahati, Kamakhya Temple
+                        is an important Shakti pilgrimage site. It is known
+                        for its distinctive temple architecture and the
+                        annual Ambubachi Mela.
+                    </p>
+                </div>
+            </article>
+
+            <article class="culture-card">
+                <img
+                    src="https://i.pinimg.com/736x/fb/8d/0e/fb8d0e060e34b5f84d8ee8dae766aa90.jpg"
+                    alt="Historic fort architecture">
+                <div class="card-content">
+                    <h3>Rang Ghar</h3>
+                    <p>
+                        Located in Sivasagar, Rang Ghar is a historic
+                        two-storey structure associated with the Ahom
+                        rulers. It was used as a royal pavilion for
+                        watching traditional games and events.
+                    </p>
+                </div>
+            </article>
+
+            <article class="culture-card">
+                <img
+                    src="https://i.pinimg.com/736x/d6/a2/6c/d6a26cfca439a3c5087c325413689fef.jpg"
+                    alt="Traditional Indian architectural structure">
+                <div class="card-content">
+                    <h3>Talatal Ghar</h3>
+                    <p>
+                        Talatal Ghar is a historic palace complex in
+                        Sivasagar associated with the Ahom kingdom.
+                        Its architectural remains provide insight into
+                        the region's royal and military history.
+                    </p>
+                </div>
+            </article>
+
+            <article class="culture-card">
+                <img
+                    src="https://i.pinimg.com/1200x/5f/02/e9/5f02e9fb8ce1388bab0320ca28a5ed68.jpg"
+                    alt="Historic religious architecture">
+                <div class="card-content">
+                    <h3>Umananda Temple</h3>
+                    <p>
+                        Umananda Temple stands on Peacock Island in the
+                        Brahmaputra River near Guwahati. Dedicated to
+                        Lord Shiva, it is a notable religious and
+                        cultural landmark of Assam.
+                    </p>
+                </div>
+            </article>
+
+        </div>
+    </section>
+
+    <!-- Traditions -->
+    <section class="traditions" id="traditions">
+        <h2 class="section-title">Traditions &amp; Folk Culture</h2>
+        <div class="decorative-line"></div>
+
+        <p class="section-intro">
+            Assam's cultural traditions are expressed through folk dance,
+            music, weaving and traditional crafts.
+        </p>
+
+        <div class="card-grid">
+
+            <article class="culture-card">
+                <div class="card-content">
+                    <h3>Bihu Dance</h3>
+                    <p>
+                        Bihu dance is a lively folk dance performed during
+                        Rongali Bihu. Its energetic movements and traditional
+                        music celebrate the arrival of spring and the
+                        agricultural cycle.
+                    </p>
+                </div>
+            </article>
+
+            <article class="culture-card">
+                <div class="card-content">
+                    <h3>Sattriya Dance</h3>
+                    <p>
+                        Sattriya is a classical dance form that developed
+                        in Assam's Vaishnavite monasteries, known as satras.
+                        It combines expressive movements, music and
+                        devotional storytelling.
+                    </p>
+                </div>
+            </article>
+
+            <article class="culture-card">
+                <div class="card-content">
+                    <h3>Muga Silk Weaving</h3>
+                    <p>
+                        Assam is famous for Muga silk, known for its natural
+                        golden colour. Skilled weavers use this silk to make
+                        traditional garments, including the mekhela chador.
+                    </p>
+                </div>
+            </article>
+
+            <article class="culture-card">
+                <div class="card-content">
+                    <h3>Jaapi Craft</h3>
+                    <p>
+                        The jaapi is a traditional conical hat made using
+                        materials such as bamboo and palm leaves. It is
+                        a recognised cultural symbol of Assam and is used
+                        for decoration and traditional occasions.
+                    </p>
+                </div>
+            </article>
+
+        </div>
+    </section>
+
+    <!-- Festivals -->
+    <section class="festivals" id="festivals">
+        <h2 class="section-title">Festivals of Assam</h2>
+        <div class="decorative-line"></div>
+
+        <p class="section-intro">
+            Assam's festivals celebrate agriculture, community life,
+            devotion and the changing seasons.
+        </p>
+
+        <div class="card-grid">
+
+            <article class="culture-card">
+                <div class="card-content">
+                    <h3>Rongali Bihu</h3>
+                    <p>
+                        Rongali Bihu, also called Bohag Bihu, marks the
+                        Assamese New Year and the arrival of spring.
+                        People celebrate with Bihu songs, dances,
+                        traditional clothing and festive food.
+                    </p>
+                </div>
+            </article>
+
+            <article class="culture-card">
+                <div class="card-content">
+                    <h3>Bhogali Bihu</h3>
+                    <p>
+                        Bhogali Bihu, or Magh Bihu, celebrates the harvest.
+                        Traditional community feasts, bonfires and foods
+                        made from rice are important parts of the festival.
+                    </p>
+                </div>
+            </article>
+
+            <article class="culture-card">
+                <div class="card-content">
+                    <h3>Kongali Bihu</h3>
+                    <p>
+                        Kongali Bihu, also known as Kati Bihu, is observed
+                        during a period when crops are growing in the fields.
+                        Lamps are lit in homes and agricultural spaces as
+                        a prayer for a good harvest.
+                    </p>
+                </div>
+            </article>
+
+            <article class="culture-card">
+                <div class="card-content">
+                    <h3>Ambubachi Mela</h3>
+                    <p>
+                        Held at Kamakhya Temple in Guwahati, Ambubachi Mela
+                        is a major religious gathering associated with
+                        fertility and the natural cycle. It attracts
+                        pilgrims from different parts of India.
+                    </p>
+                </div>
+            </article>
+
+        </div>
+    </section>
+
+    <!-- Traditional Food -->
+    <section class="food" id="food">
+        <h2 class="section-title">Traditional Food of Assam</h2>
+        <div class="decorative-line"></div>
+
+        <p class="section-intro">
+            Assamese cuisine is known for rice, fish, fresh herbs,
+            seasonal vegetables and distinctive traditional preparations.
+        </p>
+
+        <div class="card-grid">
+
+            <article class="culture-card">
+                <img
+                    src="https://i.pinimg.com/736x/32/3f/4f/323f4f08d7b65784ef822fa85420ce14.jpg"
+                    alt="Traditional Indian meal">
+                <div class="card-content">
+                    <h3>Assamese Thali</h3>
+                    <p>
+                        A traditional Assamese meal may include rice,
+                        dal, leafy vegetables, seasonal dishes, fish
+                        and chutneys. The exact combination varies
+                        among communities and households.
+                    </p>
+                </div>
+            </article>
+
+            <article class="culture-card">
+                <img
+                    src="https://i.pinimg.com/736x/cb/98/1e/cb981ea56766a1025a40348411024a4e.jpg"
+                    alt="Traditional curry dish">
+                <div class="card-content">
+                    <h3>Masor Tenga</h3>
+                    <p>
+                        Masor tenga is a popular Assamese sour fish curry.
+                        It is prepared with fish and ingredients such as
+                        tomatoes or other souring agents, giving it a
+                        refreshing flavour.
+                    </p>
+                </div>
+            </article>
+
+            <article class="culture-card">
+                <img
+                    src="https://i.pinimg.com/1200x/03/96/32/039632b73afab375ce5787827b2117b1.jpg"
+                    alt="Traditional rice-based food">
+                <div class="card-content">
+                    <h3>Til Pitha</h3>
+                    <p>
+                        Til pitha is a traditional Assamese rice cake
+                        filled with sesame seeds and jaggery. It is
+                        especially popular during Bhogali Bihu.
+                    </p>
+                </div>
+            </article>
+
+            <article class="culture-card">
+                <img
+                    src="https://i.pinimg.com/736x/86/3e/32/863e329cf962960a5bdd8c4360282238.jpg"
+                    alt="Traditional rice dish">
+                <div class="card-content">
+                    <h3>Poita Bhat</h3>
+                    <p>
+                        Poita bhat is a traditional preparation made
+                        by soaking cooked rice in water, often overnight.
+                        It is commonly eaten with salt, onions, chillies
+                        and other accompaniments.
+                    </p>
+                </div>
+            </article>
+
+            <article class="culture-card">
+                <img
+                    src="https://i.pinimg.com/736x/a2/12/a5/a212a5b67a2b940ee56af902a22a2d79.jpg"
+                    alt="Traditional sweet dish">
+                <div class="card-content">
+                    <h3>Pitha</h3>
+                    <p>
+                        Pitha refers to a variety of traditional rice-based
+                        snacks and sweets. They may be steamed, roasted
+                        or fried and are often prepared during festivals
+                        and family gatherings.
+                    </p>
+                </div>
+            </article>
+
+            <article class="culture-card">
+                <img
+                    src="https://i.pinimg.com/736x/bd/cf/8e/bdcf8e30edd926648c79aff2c425be1c.jpg"
+                    alt="Traditional snack">
+                <div class="card-content">
+                    <h3>Laru</h3>
+                    <p>
+                        Laru is a traditional sweet ball often prepared
+                        from ingredients such as coconut, sesame seeds
+                        or puffed rice with jaggery. Different varieties
+                        are enjoyed during celebrations.
+                    </p>
+                </div>
+            </article>
+
+        </div>
+    </section>
+
+    <!-- Cultural Identity -->
+    <section class="identity">
+        <h2 class="section-title">Preserving Assam's Heritage</h2>
+        <div class="decorative-line"></div>
+
+        <p>
+            Assam's heritage lives in its historic monuments, folk dances,
+            handwoven textiles, festivals, food traditions and community
+            stories.
+        </p>
+
+        <p>
+            We can help preserve this cultural wealth by documenting local
+            histories, supporting traditional artists and weavers, caring
+            for historic sites and sharing cultural knowledge with future
+            generations.
+        </p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>❖ Roots of India | Documentation and Preservation of Local Cultural Heritage</p>
+        <p>Celebrating Assam's history, traditions and cultural identity.</p>
+        <p><a href="index.html">Back to Home</a></p>
+    </footer>
+
+</body>
+</html>

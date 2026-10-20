@@ -1,0 +1,601 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uttar Pradesh | Roots of India</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Georgia, "Times New Roman", serif;
+            background-color: #efe2c8;
+            color: #493021;
+            line-height: 1.7;
+        }
+
+        /* Navigation */
+        header {
+            background-color: #f8f0df;
+            padding: 20px 4%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid #d9c4a1;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        header h2 {
+            font-size: 30px;
+            color: #70432d;
+            letter-spacing: 1px;
+        }
+
+        nav {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 28px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #493021;
+            font-family: Arial, sans-serif;
+            font-size: 15px;
+        }
+
+        nav a:hover {
+            color: #a35d32;
+        }
+
+        /* Hero section */
+        .hero {
+            min-height: 340px;
+            display: flex;
+            align-items: center;
+            padding: 55px 7%;
+            background:
+                linear-gradient(
+                    90deg,
+                    rgba(248, 239, 219, 0.96),
+                    rgba(248, 239, 219, 0.12)
+                ),
+                url("https://i.pinimg.com/736x/a9/f5/d9/a9f5d9022a40e22382cf3b4d89f3954a.jpg");
+            background-size: cover;
+            background-position: center;
+        }
+
+        .hero h1 {
+            font-size: clamp(42px, 6vw, 65px);
+            color: #62351f;
+            line-height: 1.2;
+            margin-bottom: 12px;
+        }
+
+        .hero p {
+            font-size: 20px;
+            max-width: 470px;
+        }
+
+        /* General sections */
+        section {
+            padding: 40px 6.5%;
+        }
+
+        section h2 {
+            text-align: center;
+            font-size: 32px;
+            color: #70391f;
+            margin-bottom: 8px;
+        }
+
+        .section-description {
+            max-width: 850px;
+            margin: 0 auto 24px;
+            text-align: center;
+            color: #705d4d;
+            font-size: 16px;
+        }
+
+        .intro {
+            text-align: center;
+            max-width: 900px;
+            margin: auto;
+        }
+
+        .intro p {
+            font-size: 17px;
+        }
+
+        /* Two-column card layout */
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 35px;
+            margin-top: 25px;
+        }
+
+        .card {
+            background-color: #f9f3e8;
+            border: 1px solid #ddc6a4;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(80, 48, 25, 0.05);
+        }
+
+        .card img {
+            width: 100%;
+            height: 280px;
+            object-fit: cover;
+            display: block;
+        }
+
+        .card-content {
+            padding: 22px 28px;
+        }
+
+        .card h3 {
+            font-size: 27px;
+            color: #70432d;
+            margin-bottom: 8px;
+        }
+
+        .card p {
+            color: #796657;
+            font-size: 16px;
+        }
+
+        /* Alternate section background */
+        .heritage,
+        .festivals {
+            background-color: #efe2c8;
+        }
+
+        .traditions,
+        .food {
+            background-color: #f5ead8;
+        }
+
+        /* Text-only tradition and festival cards */
+        .text-cards {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 22px 35px;
+            margin-top: 25px;
+        }
+
+        .text-card {
+            background-color: #f9f3e8;
+            border: 1px solid #ddc6a4;
+            padding: 25px 28px;
+            text-align: left;
+        }
+
+        .text-card h3 {
+            color: #70432d;
+            font-size: 25px;
+            margin-bottom: 8px;
+        }
+
+        .text-card p {
+            color: #796657;
+            font-size: 16px;
+        }
+
+        /* Preservation section */
+        .preservation {
+            text-align: center;
+            background-color: #70412a;
+            color: #f9eed9;
+            padding: 35px 7%;
+        }
+
+        .preservation h2 {
+            color: #ffe5b6;
+        }
+
+        .preservation p {
+            max-width: 850px;
+            margin: auto;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #432619;
+            color: #f8ead2;
+            text-align: center;
+            padding: 24px 15px;
+            font-size: 14px;
+        }
+
+        footer a {
+            color: #f0c78d;
+        }
+
+        /* Responsive layout */
+        @media (max-width: 700px) {
+            header {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            header h2 {
+                font-size: 26px;
+            }
+
+            nav {
+                justify-content: center;
+                gap: 15px;
+            }
+
+            .hero {
+                min-height: 280px;
+                padding: 40px 6%;
+                background-position: center;
+            }
+
+            section {
+                padding: 30px 5%;
+            }
+
+            section h2 {
+                font-size: 27px;
+            }
+
+            .cards,
+            .text-cards {
+                grid-template-columns: 1fr;
+                gap: 24px;
+            }
+
+            .card img {
+                height: 230px;
+            }
+
+            .card-content,
+            .text-card {
+                padding: 20px;
+            }
+
+            .card h3,
+            .text-card h3 {
+                font-size: 23px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<!-- Header -->
+<header>
+    <h2>❖ Roots of India</h2>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="#heritage">Heritage</a>
+        <a href="#traditions">Traditions</a>
+        <a href="#festivals">Festivals</a>
+        <a href="#food">Food</a>
+    </nav>
+</header>
+
+<!-- Hero -->
+<div class="hero">
+    <div>
+        <h1>Uttar Pradesh</h1>
+        <p>Where ancient heritage, vibrant traditions and diverse culture come together.</p>
+    </div>
+</div>
+
+<!-- Introduction -->
+<section>
+    <div class="intro">
+        <h2>A Land of Heritage and Harmony</h2>
+        <p>
+            Uttar Pradesh is a state of rich history, spiritual significance
+            and cultural diversity. From the sacred city of Varanasi to the
+            grand monuments of the Mughal era, it is home to timeless
+            traditions, classical arts, colorful festivals and unique
+            cuisine. Preserving its cultural heritage keeps its legacy
+            alive for future generations.
+        </p>
+    </div>
+</section>
+
+<!-- Heritage Sites -->
+<section class="heritage" id="heritage">
+    <h2>Historical Heritage Sites</h2>
+    <p class="section-description">
+        From ancient sacred cities to magnificent monuments, Uttar Pradesh's
+        heritage sites tell stories of its glorious past.
+    </p>
+
+    <div class="cards">
+
+        <div class="card">
+            <img
+                src="https://images.unsplash.com/photo-1564507592333-c60657eea523?auto=format&fit=crop&w=1000&q=85"
+                alt="Taj Mahal in Agra">
+
+            <div class="card-content">
+                <h3>Taj Mahal</h3>
+                <p>
+                    Located in Agra, the Taj Mahal is a world-famous marble
+                    monument built by Emperor Shah Jahan. It is admired for
+                    its beauty and Mughal architecture.
+                </p>
+            </div>
+        </div>
+
+        <div class="card">
+            <img
+                src="https://i.pinimg.com/736x/ad/99/a1/ad99a11a2c22e0cbcf9f51f12529fcf1.jpg"
+                alt="Historic ghats along the River Ganga">
+
+            <div class="card-content">
+                <h3>Varanasi Ghats</h3>
+                <p>
+                    The ghats along the River Ganga are important places
+                    for religious rituals and spiritual gatherings.
+                    Varanasi is also known for its ancient temples and
+                    living cultural traditions.
+                </p>
+            </div>
+        </div>
+
+        <div class="card">
+            <img
+                src="https://i.pinimg.com/736x/c5/31/ab/c531ab79d10e2e4ff29995cdd589c910.jpg"
+                alt="Historic Indian architecture">
+
+            <div class="card-content">
+                <h3>Fatehpur Sikri</h3>
+                <p>
+                    Built by Emperor Akbar, Fatehpur Sikri is a historic
+                    city known for its red sandstone buildings and
+                    remarkable Mughal architectural style.
+                </p>
+            </div>
+        </div>
+
+        <div class="card">
+            <img
+                src="https://i.pinimg.com/1200x/e1/3e/85/e13e85dafcb6f9064c82cd076f743458.jpg"
+                alt="Historic architecture">
+
+            <div class="card-content">
+                <h3>Bara Imambara</h3>
+                <p>
+                    Located in Lucknow, Bara Imambara is known for its
+                    impressive central hall, distinctive architecture
+                    and importance in the history of Awadh.
+                </p>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- Traditions: no pictures -->
+<section class="traditions" id="traditions">
+    <h2>Traditions &amp; Folk Culture</h2>
+    <p class="section-description">
+        Uttar Pradesh's culture is expressed through classical dance,
+        traditional performances, embroidery and skilled craftsmanship.
+    </p>
+
+    <div class="text-cards">
+
+        <div class="text-card">
+            <h3>Kathak Dance</h3>
+            <p>
+                Kathak is a classical Indian dance form associated with
+                Uttar Pradesh. It combines graceful movements, rhythmic
+                footwork, facial expressions and storytelling.
+            </p>
+        </div>
+
+        <div class="text-card">
+            <h3>Ramlila</h3>
+            <p>
+                Ramlila is a traditional theatrical performance based
+                on the Ramayana. It is performed in many communities,
+                especially during the festival of Dussehra.
+            </p>
+        </div>
+
+        <div class="text-card">
+            <h3>Chikankari</h3>
+            <p>
+                Chikankari is a delicate hand-embroidery tradition
+                associated with Lucknow. Its detailed stitches and
+                elegant patterns are valued by artisans and visitors.
+            </p>
+        </div>
+
+        <div class="text-card">
+            <h3>Brass Handicrafts</h3>
+            <p>
+                Moradabad is famous for brass and metal handicrafts.
+                Local artisans create decorative objects and household
+                items using traditional skills.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+<!-- Festivals -->
+<section class="festivals" id="festivals">
+    <h2>Festivals of Uttar Pradesh</h2>
+    <p class="section-description">
+        Festivals bring people together through devotion, celebration
+        and community participation.
+    </p>
+
+    <div class="text-cards">
+
+        <div class="text-card">
+            <h3>Diwali</h3>
+            <p>
+                The festival of lights is celebrated with lamps,
+                prayers, sweets and family gatherings.
+            </p>
+        </div>
+
+        <div class="text-card">
+            <h3>Holi</h3>
+            <p>
+                Holi is celebrated with colors, music and joyful
+                gatherings, welcoming spring and encouraging togetherness.
+            </p>
+        </div>
+
+        <div class="text-card">
+            <h3>Kumbh Mela</h3>
+            <p>
+                Prayagraj hosts the Kumbh Mela during designated cycles.
+                Pilgrims gather for sacred bathing, prayers and
+                spiritual activities.
+            </p>
+        </div>
+
+        <div class="text-card">
+            <h3>Eid</h3>
+            <p>
+                Eid is celebrated through prayers, festive meals,
+                charity and gatherings with family and friends.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+<!-- Traditional Food: pictures included -->
+<section class="food" id="food">
+    <h2>Traditional Food</h2>
+    <p class="section-description">
+        Uttar Pradesh's cuisine is known for its rich flavors,
+        traditional recipes and regional specialties.
+    </p>
+
+    <div class="cards">
+
+        <div class="card">
+            <img
+                src="https://i.pinimg.com/1200x/b3/49/a4/b349a44e05a428b97cdc66993b62f9e0.jpg"
+                alt="Grilled kebabs">
+
+            <div class="card-content">
+                <h3>Tunday Kababi</h3>
+                <p>
+                    A famous Lucknow specialty, known for its soft
+                    kebabs and distinctive blend of spices.
+                </p>
+            </div>
+        </div>
+
+        <div class="card">
+            <img
+                src="https://i.pinimg.com/736x/ca/51/13/ca5113f1dcbba7af9520db2d543355c3.jpg"
+                alt="Indian fried snacks">
+
+            <div class="card-content">
+                <h3>Bedmi Puri</h3>
+                <p>
+                    A popular regional breakfast dish, often served
+                    with spicy potato curry.
+                </p>
+            </div>
+        </div>
+
+        <div class="card">
+            <img
+                src="https://i.pinimg.com/736x/23/45/52/2345520d72def74bcb57a179b38480d9.jpg"
+                alt="Indian curry">
+
+            <div class="card-content">
+                <h3>Kachori Sabzi</h3>
+                <p>
+                    A well-loved combination of crisp kachori and
+                    flavorful curry enjoyed in many parts of the state.
+                </p>
+            </div>
+        </div>
+
+        <div class="card">
+            <img
+                src="https://i.pinimg.com/1200x/75/c3/04/75c304ab00bdcac389b9b1a94ca4e848.jpg"
+                alt="Traditional rice dish">
+
+            <div class="card-content">
+                <h3>Awadhi Biryani</h3>
+                <p>
+                    An aromatic rice dish associated with Awadhi cuisine,
+                    known for fragrant spices and careful preparation.
+                </p>
+            </div>
+        </div>
+
+        <div class="card">
+            <img
+                src="https://i.pinimg.com/736x/2e/be/34/2ebe34045564b7df4cd26ff60b1a4231.jpg"
+                alt="Traditional Indian sweets">
+
+            <div class="card-content">
+                <h3>Agra Petha</h3>
+                <p>
+                    A famous sweet from Agra, traditionally made from
+                    ash gourd and sugar syrup.
+                </p>
+            </div>
+        </div>
+
+        <div class="card">
+            <img
+                src="https://i.pinimg.com/736x/16/ac/06/16ac06b257bce3a16288b14019c24972.jpg"
+                alt="Traditional Indian food">
+
+            <div class="card-content">
+                <h3>Regional Sweets</h3>
+                <p>
+                    Traditional sweets such as peda and other local
+                    specialties are enjoyed during festivals and
+                    family celebrations.
+                </p>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- Cultural Preservation -->
+<section class="preservation">
+    <h2>Preserving Uttar Pradesh's Heritage</h2>
+    <p>
+        By protecting historical monuments, supporting local artisans,
+        documenting traditions and encouraging community participation,
+        we can preserve Uttar Pradesh's cultural identity for future
+        generations. Passing traditional knowledge to young people
+        helps keep this heritage alive.
+    </p>
+</section>
+
+<!-- Footer -->
+<footer>
+    <p>❖ Roots of India</p>
+    <p>Documentation and Preservation of Local Cultural Heritage</p>
+    <p>Celebrating Uttar Pradesh's history, traditions and cultural identity.</p>
+    <p><a href="index.html">Back to Home</a></p>
+</footer>
+
+</body>
+</html>

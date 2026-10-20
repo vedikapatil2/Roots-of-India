@@ -1,0 +1,595 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gujarat | Roots of India</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Georgia, "Times New Roman", serif;
+            background-color: #f8f1e5;
+            color: #443126;
+            line-height: 1.7;
+        }
+
+        header {
+            background-color: #743b27;
+            color: #fff4df;
+            padding: 18px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+
+        header h2 {
+            font-size: 25px;
+        }
+
+        nav {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 18px;
+        }
+
+        nav a {
+            color: #fff4df;
+            text-decoration: none;
+            font-size: 15px;
+        }
+
+        nav a:hover {
+            color: #f2c078;
+        }
+
+        .hero {
+            min-height: 350px;
+            padding: 75px 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+            background:
+                linear-gradient(rgba(47, 27, 17, 0.58),
+                                rgba(47, 27, 17, 0.65)),
+                url("https://images.unsplash.com/photo-1606293926075-69a00dbfde81?auto=format&fit=crop&w=1600&q=80");
+            background-size: cover;
+            background-position: center;
+        }
+
+        .hero h1 {
+            font-size: clamp(38px, 6vw, 60px);
+            margin-bottom: 12px;
+        }
+
+        .hero p {
+            font-size: 19px;
+            max-width: 700px;
+        }
+
+        section {
+            display: block;
+            padding: 55px 8%;
+            scroll-margin-top: 20px;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 32px;
+            color: #743b27;
+            margin-bottom: 12px;
+        }
+
+        .section-intro {
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto 30px;
+        }
+
+        .intro {
+            text-align: center;
+            background-color: #fffaf1;
+        }
+
+        .intro p {
+            max-width: 900px;
+            margin: 15px auto 0;
+        }
+
+        .decorative-line {
+            width: 85px;
+            height: 3px;
+            background-color: #bd7b37;
+            margin: 15px auto 25px;
+        }
+
+        .card-grid {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 25px;
+            margin-top: 30px;
+        }
+
+        .culture-card {
+            background: #fffaf1;
+            border: 1px solid #e5d2b7;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 12px rgba(76, 46, 28, 0.08);
+        }
+
+        .culture-card img {
+            display: block;
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+            background-color: #e7d5bd;
+        }
+
+        .card-content {
+            padding: 20px;
+        }
+
+        .card-content h3 {
+            color: #85472c;
+            font-size: 22px;
+            margin-bottom: 8px;
+        }
+
+        .card-content p {
+            font-size: 15px;
+        }
+
+        .traditions {
+            background-color: #efe1cb;
+        }
+
+        .festivals {
+            background-color: #fffaf1;
+        }
+
+        .food {
+            background-color: #efe1cb;
+        }
+
+        .identity {
+            text-align: center;
+            background-color: #743b27;
+            color: #fff4df;
+        }
+
+        .identity .section-title {
+            color: #fff4df;
+        }
+
+        .identity p {
+            max-width: 850px;
+            margin: 15px auto;
+        }
+
+        footer {
+            background-color: #3c291f;
+            color: #f8e9d0;
+            text-align: center;
+            padding: 22px 15px;
+            font-size: 14px;
+        }
+
+        footer a {
+            color: #f2c078;
+            text-decoration: none;
+        }
+
+        @media (max-width: 650px) {
+            header {
+                justify-content: center;
+                text-align: center;
+            }
+
+            nav {
+                justify-content: center;
+            }
+
+            .card-grid {
+                grid-template-columns: 1fr;
+            }
+
+            section {
+                padding: 40px 6%;
+            }
+
+            .section-title {
+                font-size: 27px;
+            }
+
+            .culture-card img {
+                height: 200px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <h2>❖ Roots of India</h2>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="#heritage">Heritage Sites</a>
+            <a href="#traditions">Traditions</a>
+            <a href="#festivals">Festivals</a>
+            <a href="#food">Food</a>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <div class="hero">
+        <h1>Gujarat</h1>
+        <p>Discover the vibrant traditions, historic monuments and colourful culture of Gujarat.</p>
+    </div>
+
+    <!-- Introduction -->
+    <section class="intro">
+        <h2 class="section-title">A Land of Art and Traditions</h2>
+        <div class="decorative-line"></div>
+
+        <p>
+            Gujarat is a state in western India known for its ancient
+            archaeological sites, historic temples, colourful handicrafts,
+            folk dances and traditional cuisine. Its cultural heritage
+            reflects the creativity of local communities, the importance
+            of trade and the influence of different historical periods.
+            From the white salt desert of Kutch to the stepwells of
+            Ahmedabad, Gujarat has a rich identity that deserves to be
+            documented and preserved.
+        </p>
+    </section>
+
+    <!-- Heritage Sites -->
+    <section id="heritage">
+        <h2 class="section-title">Historical Heritage Sites</h2>
+        <div class="decorative-line"></div>
+
+        <p class="section-intro">
+            Gujarat's historic cities, stepwells, temples and archaeological
+            remains reveal its architectural and cultural history.
+        </p>
+
+        <div class="card-grid">
+
+            <article class="culture-card">
+                <img
+                    src="https://i.pinimg.com/736x/4b/cd/fe/4bcdfe00b910a3426fe4d0998592fe48.jpg"
+                    alt="Historic Indian stone architecture">
+                <div class="card-content">
+                    <h3>Rani ki Vav</h3>
+                    <p>
+                        Located in Patan, Rani ki Vav is a magnificent
+                        stepwell built during the Solanki period. It is
+                        famous for its detailed stone carvings and was
+                        recognised as a UNESCO World Heritage Site.
+                    </p>
+                </div>
+            </article>
+
+            <article class="culture-card">
+                <img
+                    src="https://i.pinimg.com/1200x/39/7f/e5/397fe5e9b32c3055a9fcf67d0453a6b1.jpg"
+                    alt="Historic fort architecture">
+                <div class="card-content">
+                    <h3>Champaner-Pavagadh</h3>
+                    <p>
+                        This historic landscape contains forts, mosques,
+                        temples, palaces and other archaeological remains.
+                        It reflects the architectural and cultural history
+                        of Gujarat across different periods.
+                    </p>
+                </div>
+            </article>
+
+            <article class="culture-card">
+                <img
+                    src="https://i.pinimg.com/736x/63/c7/84/63c7841090ed1e3932f3bdcb65c85a6f.jpg"
+                    alt="Traditional Indian architecture">
+                <div class="card-content">
+                    <h3>Adalaj Stepwell</h3>
+                    <p>
+                        Near Ahmedabad, Adalaj Stepwell is known for its
+                        carved pillars, galleries and beautifully decorated
+                        stonework. It demonstrates how traditional water
+                        structures combined practical use with art.
+                    </p>
+                </div>
+            </article>
+
+            <article class="culture-card">
+                <img
+                    src="https://i.pinimg.com/736x/5f/54/83/5f54837f86ea6daf47f4b7b3cce55996.jpg"
+                    alt="Historic religious architecture">
+                <div class="card-content">
+                    <h3>Somnath Temple</h3>
+                    <p>
+                        Situated on the Arabian Sea coast, Somnath is one
+                        of the major pilgrimage sites associated with Lord
+                        Shiva. The temple is an important part of Gujarat's
+                        religious and architectural heritage.
+                    </p>
+                </div>
+            </article>
+
+        </div>
+    </section>
+
+    <!-- Traditions -->
+    <section class="traditions" id="traditions">
+        <h2 class="section-title">Traditions &amp; Folk Culture</h2>
+        <div class="decorative-line"></div>
+
+        <p class="section-intro">
+            Gujarat's folk traditions express community life through
+            dance, embroidery, painting and traditional textiles.
+        </p>
+
+        <div class="card-grid">
+
+            <article class="culture-card">
+                <div class="card-content">
+                    <h3>Garba</h3>
+                    <p>
+                        Garba is a traditional group dance performed in
+                        circles, especially during Navratri. Dancers move
+                        to rhythmic music and celebrate devotion, community
+                        and togetherness.
+                    </p>
+                </div>
+            </article>
+
+            <article class="culture-card">
+                <div class="card-content">
+                    <h3>Dandiya Raas</h3>
+                    <p>
+                        Dandiya Raas is a lively folk dance in which
+                        participants use decorated sticks while moving
+                        in coordinated patterns to traditional music.
+                    </p>
+                </div>
+            </article>
+
+            <article class="culture-card">
+                <div class="card-content">
+                    <h3>Kutch Embroidery</h3>
+                    <p>
+                        Kutch is known for colourful embroidery featuring
+                        intricate stitches, mirrors and geometric designs.
+                        These handmade textiles reflect the skills and
+                        identity of local communities.
+                    </p>
+                </div>
+            </article>
+
+            <article class="culture-card">
+                <div class="card-content">
+                    <h3>Bandhani</h3>
+                    <p>
+                        Bandhani is a traditional tie-dye textile technique.
+                        Small sections of cloth are tied before dyeing
+                        to create distinctive patterns on saris, dupattas
+                        and other garments.
+                    </p>
+                </div>
+            </article>
+
+        </div>
+    </section>
+
+    <!-- Festivals -->
+    <section class="festivals" id="festivals">
+        <h2 class="section-title">Festivals of Gujarat</h2>
+        <div class="decorative-line"></div>
+
+        <p class="section-intro">
+            Festivals bring people together through traditional music,
+            dance, prayers, crafts and community celebrations.
+        </p>
+
+        <div class="card-grid">
+
+            <article class="culture-card">
+                <div class="card-content">
+                    <h3>Navratri</h3>
+                    <p>
+                        Navratri is celebrated with great enthusiasm in
+                        Gujarat. People gather for Garba and Dandiya Raas,
+                        wearing colourful traditional clothing and
+                        celebrating the worship of the Goddess.
+                    </p>
+                </div>
+            </article>
+
+            <article class="culture-card">
+                <div class="card-content">
+                    <h3>Uttarayan</h3>
+                    <p>
+                        Uttarayan, the kite festival, marks the seasonal
+                        transition around mid-January. Rooftops fill with
+                        colourful kites, and families enjoy special foods
+                        and outdoor celebrations.
+                    </p>
+                </div>
+            </article>
+
+            <article class="culture-card">
+                <div class="card-content">
+                    <h3>Rann Utsav</h3>
+                    <p>
+                        Rann Utsav is a cultural festival held in the
+                        Kutch region. It showcases local music, dance,
+                        handicrafts, regional food and the beauty of
+                        the white salt desert.
+                    </p>
+                </div>
+            </article>
+
+            <article class="culture-card">
+                <div class="card-content">
+                    <h3>Janmashtami</h3>
+                    <p>
+                        Janmashtami celebrates the birth of Lord Krishna.
+                        Temples and homes hold prayers, devotional singing
+                        and cultural programmes. Dwarka is an important
+                        pilgrimage destination associated with Krishna.
+                    </p>
+                </div>
+            </article>
+
+        </div>
+    </section>
+
+    <!-- Traditional Food -->
+    <section class="food" id="food">
+        <h2 class="section-title">Traditional Food of Gujarat</h2>
+        <div class="decorative-line"></div>
+
+        <p class="section-intro">
+            Gujarati cuisine is known for its variety of vegetarian
+            dishes, balanced flavours, snacks and traditional sweets.
+        </p>
+
+        <div class="card-grid">
+
+            <article class="culture-card">
+                <img
+                    src="https://i.pinimg.com/736x/c4/3b/ec/c43bec9ea5e61e13d03309f8eeecbae9.jpg"
+                    alt="Traditional Indian meal">
+                <div class="card-content">
+                    <h3>Gujarati Thali</h3>
+                    <p>
+                        A Gujarati thali is a traditional meal served
+                        with a variety of dishes such as rotli, dal,
+                        vegetables, kadhi, rice, pickles and sweets.
+                    </p>
+                </div>
+            </article>
+
+            <article class="culture-card">
+                <img
+                    src="https://i.pinimg.com/1200x/4f/5f/2f/4f5f2fac205a35ae33615e4168ae56ea.jpg"
+                    alt="Steamed savoury food">
+                <div class="card-content">
+                    <h3>Dhokla</h3>
+                    <p>
+                        Dhokla is a soft, savoury steamed snack commonly
+                        prepared from fermented gram flour or other
+                        grain-and-lentil mixtures. It is often served
+                        with chutney.
+                    </p>
+                </div>
+            </article>
+
+            <article class="culture-card">
+                <img
+                    src="https://i.pinimg.com/1200x/e5/af/30/e5af30e03ee777c1ff1887239f4cb3ac.jpg"
+                    alt="Indian curry and regional food">
+                <div class="card-content">
+                    <h3>Undhiyu</h3>
+                    <p>
+                        Undhiyu is a traditional mixed-vegetable dish
+                        associated especially with winter in Gujarat.
+                        It combines seasonal vegetables, spices and
+                        regional cooking techniques.
+                    </p>
+                </div>
+            </article>
+
+            <article class="culture-card">
+                <img
+                    src="https://i.pinimg.com/736x/f3/61/9a/f3619a729da1c6a8372acaec63499efe.jpg"
+                    alt="Indian snack and meal">
+                <div class="card-content">
+                    <h3>Fafda and Jalebi</h3>
+                    <p>
+                        Fafda is a crisp savoury snack often eaten with
+                        chutney, while jalebi is a sweet made from
+                        batter fried into spirals and soaked in syrup.
+                        They are a popular combination in Gujarat.
+                    </p>
+                </div>
+            </article>
+
+            <article class="culture-card">
+                <img
+                    src="https://i.pinimg.com/736x/44/7c/3e/447c3e1296214a2b3225ab0ab0514d6c.jpg"
+                    alt="Traditional Indian sweet">
+                <div class="card-content">
+                    <h3>Shrikhand</h3>
+                    <p>
+                        Shrikhand is a creamy dessert made from strained
+                        yoghurt, sugar and flavourings such as cardamom
+                        or saffron. It is often served during festive meals.
+                    </p>
+                </div>
+            </article>
+
+            <article class="culture-card">
+                <img
+                    src="https://i.pinimg.com/1200x/6d/1a/1a/6d1a1a022f9bcd952f21be6fc99a7a8b.jpg"
+                    alt="Crispy snack">
+                <div class="card-content">
+                    <h3>Khakhra</h3>
+                    <p>
+                        Khakhra is a thin, crisp roasted flatbread
+                        commonly made from wheat flour and spices.
+                        It is enjoyed as a snack or a light accompaniment
+                        to meals.
+                    </p>
+                </div>
+            </article>
+
+        </div>
+    </section>
+
+    <!-- Cultural Identity -->
+    <section class="identity">
+        <h2 class="section-title">Preserving Gujarat's Heritage</h2>
+        <div class="decorative-line"></div>
+
+        <p>
+            Gujarat's cultural identity lives in its historic monuments,
+            folk dances, textiles, festivals, traditional foods and
+            community knowledge.
+        </p>
+
+        <p>
+            We can help preserve this heritage by documenting local
+            stories, supporting traditional artists and craftspeople,
+            caring for historic sites and sharing cultural knowledge
+            with future generations.
+        </p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>❖ Roots of India | Documentation and Preservation of Local Cultural Heritage</p>
+        <p>Celebrating Gujarat's history, traditions and cultural identity.</p>
+        <p><a href="index.html">Back to Home</a></p>
+    </footer>
+
+</body>
+</html>

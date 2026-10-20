@@ -1,0 +1,1758 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f7f0df;
+    color: #3d2b20;
+}
+
+
+/* ================= HEADER ================= */
+
+header {
+    height: 78px;
+    background-color: #f7f0df;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 8%;
+    border-bottom: 1px solid #d5b98c;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 28px;
+    font-weight: 700;
+    color: #783f28;
+    letter-spacing: 1px;
+}
+
+.logo span {
+    font-size: 24px;
+    margin-right: 7px;
+}
+
+nav {
+    display: flex;
+    gap: 35px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #4c3628;
+    font-size: 14px;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #a65332;
+}
+
+
+/* ================= HERO ================= */
+
+.hero {
+    min-height: 650px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+
+    background:
+        linear-gradient(
+            rgba(55, 35, 23, 0.55),
+            rgba(55, 35, 23, 0.55)
+        ),
+        url("https://images.unsplash.com/photo-1548013146-72479768bada?auto=format&fit=crop&w=1800&q=80");
+
+    background-size: cover;
+    background-position: center;
+}
+
+.hero-content {
+    width: 65%;
+    padding-left: 10%;
+    color: white;
+    position: relative;
+    z-index: 2;
+}
+
+.small-title {
+    font-size: 13px;
+    letter-spacing: 4px;
+    margin-bottom: 20px;
+    color: #e6c895;
+}
+
+.hero h1 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 64px;
+    line-height: 1.05;
+    font-weight: 600;
+}
+
+.hero h1 span {
+    color: #e4bd79;
+}
+
+.hero-text {
+    max-width: 600px;
+    margin-top: 25px;
+    line-height: 1.8;
+    font-size: 16px;
+    color: #f5ead8;
+}
+
+.explore-btn {
+    display: inline-block;
+    margin-top: 35px;
+    padding: 14px 30px;
+    background-color: #a65332;
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    letter-spacing: 1px;
+    transition: 0.3s;
+}
+
+.explore-btn:hover {
+    background-color: #783f28;
+    transform: translateY(-2px);
+}
+
+
+/* Decorative circle */
+
+.hero-decoration {
+    position: absolute;
+    right: 8%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.circle-pattern {
+    width: 260px;
+    height: 260px;
+    border: 1px solid #e4bd79;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #e4bd79;
+    font-size: 70px;
+    opacity: 0.7;
+}
+
+.circle-pattern::before {
+    content: "";
+    position: absolute;
+    width: 210px;
+    height: 210px;
+    border: 1px solid #e4bd79;
+    border-radius: 50%;
+}
+
+
+/* ================= INTRODUCTION ================= */
+
+.intro {
+    max-width: 900px;
+    margin: auto;
+    text-align: center;
+    padding: 90px 30px;
+}
+
+.section-label {
+    color: #a65332;
+    font-size: 12px;
+    letter-spacing: 3px;
+    font-weight: 600;
+    margin-bottom: 12px;
+}
+
+.intro h2,
+.states-section h2,
+.about h2 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 45px;
+    color: #5c3322;
+}
+
+.decorative-line {
+    margin: 18px auto 25px;
+    width: 150px;
+    height: 1px;
+    background-color: #c8a875;
+    position: relative;
+}
+
+.decorative-line span {
+    background-color: #f7f0df;
+    padding: 0 12px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    color: #a65332;
+}
+
+.intro p:not(.section-label) {
+    line-height: 1.9;
+    color: #665449;
+    margin-bottom: 15px;
+}
+
+
+/* ================= STATES ================= */
+
+.states-section {
+    background-color: #eee2ca;
+    padding: 90px 8%;
+    text-align: center;
+}
+
+.section-description {
+    color: #665449;
+    margin-bottom: 45px;
+}
+
+.state-container {
+    max-width: 1200px;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 28px;
+}
+
+
+/* State Cards */
+
+.state-card {
+    background-color: #f9f4e8;
+    text-align: left;
+    text-decoration: none;
+    color: #3d2b20;
+
+    border: 1px solid #d7c39d;
+
+    transition: 0.35s;
+
+    position: relative;
+    overflow: hidden;
+}
+
+.state-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 30px rgba(75, 46, 30, 0.15);
+}
+
+
+/* Card image */
+
+.card-image {
+    height: 210px;
+    position: relative;
+
+    background-size: cover;
+    background-position: center;
+}
+
+
+/* Individual state images */
+
+.maharashtra {
+    background-image:
+        linear-gradient(rgba(70, 40, 25, 0.25), rgba(70, 40, 25, 0.25)),
+        url("https://images.unsplash.com/photo-1595658658481-d53d3f999875?auto=format&fit=crop&w=800&q=80");
+}
+
+.rajasthan {
+    background-image:
+        linear-gradient(rgba(70, 40, 25, 0.25), rgba(70, 40, 25, 0.25)),
+        url("https://images.unsplash.com/photo-1477587458883-47145ed94245?auto=format&fit=crop&w=800&q=80");
+}
+
+.kerala {
+    background-image:
+        linear-gradient(rgba(40, 60, 40, 0.25), rgba(40, 60, 40, 0.25)),
+        url("https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?auto=format&fit=crop&w=800&q=80");
+}
+
+.gujarat {
+    background-image:
+        linear-gradient(rgba(80, 50, 30, 0.25), rgba(80, 50, 30, 0.25)),
+        url("https://i.pinimg.com/736x/9e/3c/92/9e3c92d3ede0b918bc198e3814d367fa.jpg");
+}
+
+.assam {
+    background-image:
+        linear-gradient(rgba(30, 70, 50, 0.25), rgba(30, 70, 50, 0.25)),
+        url("https://images.unsplash.com/photo-1500534623283-312aade485b7?auto=format&fit=crop&w=800&q=80");
+}
+
+.up {
+    background-image:
+        linear-gradient(rgba(70, 45, 30, 0.25), rgba(70, 45, 30, 0.25)),
+        url("https://images.unsplash.com/photo-1564507592333-c60657eea523?auto=format&fit=crop&w=800&q=80");
+}
+
+
+/* Symbol on card */
+
+.state-symbol {
+    position: absolute;
+    right: 18px;
+    top: 18px;
+
+    width: 45px;
+    height: 45px;
+
+    border: 1px solid rgba(255,255,255,0.8);
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: white;
+    font-size: 22px;
+
+    background: rgba(70, 40, 25, 0.35);
+}
+
+
+/* Card content */
+
+.card-content {
+    padding: 24px;
+}
+
+.state-number {
+    color: #a65332;
+    font-size: 12px;
+    letter-spacing: 2px;
+}
+
+.card-content h3 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 31px;
+    color: #5c3322;
+    margin: 5px 0 10px;
+}
+
+.card-content p:not(.state-number) {
+    font-size: 13px;
+    line-height: 1.7;
+    color: #6b5a4d;
+}
+
+.view-link {
+    display: inline-block;
+    margin-top: 17px;
+    color: #a65332;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+
+/* ================= QUOTE ================= */
+
+.quote-section {
+    background-color: #603b29;
+    color: #f8ecd6;
+
+    text-align: center;
+
+    padding: 80px 20px;
+}
+
+.quote-pattern {
+    color: #d5ae6d;
+    letter-spacing: 8px;
+    margin-bottom: 25px;
+}
+
+.quote-section blockquote {
+    max-width: 800px;
+    margin: auto;
+
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 38px;
+    line-height: 1.3;
+}
+
+
+/* ================= ABOUT ================= */
+
+.about {
+    max-width: 850px;
+    margin: auto;
+
+    text-align: center;
+
+    padding: 90px 30px;
+}
+
+.about p:not(.section-label) {
+    color: #665449;
+    line-height: 1.9;
+    margin-bottom: 15px;
+}
+
+
+/* ================= FOOTER ================= */
+
+footer {
+    background-color: #3c281d;
+    color: #e9dbc2;
+    text-align: center;
+
+    padding: 50px 20px;
+}
+
+.footer-logo {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 12px;
+}
+
+footer > p {
+    font-size: 13px;
+    color: #cdbda5;
+}
+
+.footer-line {
+    width: 100px;
+    height: 1px;
+    background-color: #a65332;
+    margin: 25px auto;
+}
+
+.copyright {
+    font-size: 11px !important;
+}
+
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 900px) {
+
+    .hero h1 {
+        font-size: 50px;
+    }
+
+    .hero-decoration {
+        display: none;
+    }
+
+    .hero-content {
+        width: 90%;
+    }
+
+    .state-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    header {
+        height: auto;
+        padding: 20px;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav {
+        gap: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .hero {
+        min-height: 600px;
+    }
+
+    .hero-content {
+        padding-left: 7%;
+    }
+
+    .hero h1 {
+        font-size: 42px;
+    }
+
+    .state-container {
+        grid-template-columns: 1fr;
+    }
+
+    .intro h2,
+    .states-section h2,
+    .about h2 {
+        font-size: 38px;
+    }
+
+    .quote-section blockquote {
+        font-size: 30px;
+    }
+}
+/* =========================================
+   MAHARASHTRA PAGE
+   ========================================= */
+
+
+/* ---------- HERO ---------- */
+
+.mh-hero {
+    min-height: 570px;
+
+    display: flex;
+    align-items: center;
+
+    background:
+        linear-gradient(
+            rgba(55, 32, 22, 0.55),
+            rgba(55, 32, 22, 0.55)
+        ),
+        url("https://images.unsplash.com/photo-1595658658481-d53d3f999875?auto=format&fit=crop&w=1800&q=80");
+
+    background-size: cover;
+    background-position: center;
+}
+
+.mh-hero-content {
+    width: 750px;
+    margin-left: 10%;
+    color: white;
+}
+
+.mh-hero-content h1 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 80px;
+    line-height: 1;
+    color: #f0cc91;
+}
+
+.mh-hero-content p:last-child {
+    max-width: 600px;
+    line-height: 1.8;
+    font-size: 16px;
+    color: #f5ead8;
+}
+
+.mh-line {
+    width: 100px;
+    height: 2px;
+    background-color: #d5ae6d;
+    margin: 25px 0;
+}
+
+
+/* ---------- INTRODUCTION ---------- */
+
+.mh-introduction {
+    max-width: 900px;
+    margin: auto;
+
+    text-align: center;
+
+    padding: 90px 30px;
+}
+
+.mh-introduction p:not(.section-label) {
+    color: #665449;
+    line-height: 1.9;
+    margin-bottom: 15px;
+}
+
+
+/* ---------- COMMON SECTION ---------- */
+
+.mh-section {
+    padding: 90px 8%;
+    background-color: #eee2ca;
+    text-align: center;
+}
+
+.mh-section h2,
+.mh-introduction h2,
+.mh-traditions h2,
+.mh-identity h2 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 45px;
+    color: #5c3322;
+}
+
+
+/* ---------- HERITAGE CARDS ---------- */
+
+.mh-grid {
+    max-width: 1200px;
+    margin: 45px auto 0;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+
+.mh-card {
+    background-color: #f9f4e8;
+    border: 1px solid #d7c39d;
+
+    text-align: left;
+
+    transition: 0.3s;
+}
+
+.mh-card:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 15px 30px rgba(75, 46, 30, 0.15);
+}
+
+.mh-card-image {
+    height: 270px;
+
+    background-size: cover;
+    background-position: center;
+}
+
+
+/* Heritage images */
+
+.ajanta {
+    background-image:
+        url("https://i.pinimg.com/736x/b1/9a/64/b19a644c2af93ce55a0a654837f30a41.jpg");
+}
+
+.ellora {
+    background-image:
+        url("https://i.pinimg.com/736x/20/e9/e5/20e9e5115a8ed1fed84542f4923d393e.jpg");
+}
+
+.raigad {
+    background-image:
+        url("https://i.pinimg.com/1200x/a4/db/1e/a4db1e460d2e1120e88ddd6a82ab9496.jpg");
+}
+
+.shaniwar {
+    background-image:
+        url("https://i.pinimg.com/1200x/00/20/f4/0020f4e245d76730d68e169947d412b4.jpg");
+}
+
+
+.mh-card-content {
+    padding: 25px;
+}
+
+.mh-card-content h3 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 32px;
+    color: #5c3322;
+    margin-bottom: 10px;
+}
+
+.mh-card-content p {
+    color: #6b5a4d;
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+
+/* ---------- TRADITIONS ---------- */
+
+.mh-traditions {
+    background-color: #f7f0df;
+    padding: 100px 8%;
+}
+
+.tradition-content {
+    max-width: 1100px;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 70px;
+
+    align-items: center;
+}
+
+.tradition-text {
+    text-align: left;
+}
+
+.tradition-text p {
+    color: #665449;
+    line-height: 1.9;
+}
+
+.left-line {
+    margin-left: 0;
+}
+
+.tradition-text ul {
+    list-style: none;
+    margin-top: 25px;
+}
+
+.tradition-text li {
+    padding: 15px 0;
+
+    border-bottom: 1px solid #d9c7a6;
+
+    color: #665449;
+    line-height: 1.7;
+}
+
+.tradition-text li strong {
+    color: #8b492e;
+}
+
+
+/* Warli-inspired decoration */
+
+.warli-design {
+    height: 380px;
+
+    background-color: #603b29;
+
+    position: relative;
+
+    overflow: hidden;
+
+    border: 8px solid #d5b477;
+}
+
+.warli-design::before {
+    content: "";
+
+    position: absolute;
+
+    left: 40px;
+    right: 40px;
+    bottom: 55px;
+
+    height: 2px;
+
+    background-color: #e5c98d;
+}
+
+.warli-circle {
+    position: absolute;
+
+    top: 55px;
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    width: 110px;
+    height: 110px;
+
+    border: 2px solid #e5c98d;
+
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: #e5c98d;
+    font-size: 50px;
+}
+
+.warli-person {
+    position: absolute;
+
+    left: 50%;
+    bottom: 85px;
+
+    transform: translateX(-50%);
+
+    color: #e5c98d;
+
+    font-size: 90px;
+}
+
+.warli-sun {
+    position: absolute;
+
+    top: 20px;
+    right: 25px;
+
+    color: #e5c98d;
+
+    font-size: 35px;
+}
+
+
+/* ---------- FESTIVALS ---------- */
+
+/* =========================================
+   MAHARASHTRA FESTIVALS
+   ========================================= */
+
+.mh-festivals {
+    padding: 90px 8%;
+    background-color: #eee2ca;
+    text-align: center;
+}
+
+.mh-festivals h2 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 45px;
+    color: #5c3322;
+}
+
+.festival-intro {
+    max-width: 650px;
+    margin: 0 auto 45px;
+    color: #665449;
+    line-height: 1.8;
+}
+
+
+/* FESTIVAL GRID */
+
+.mh-festivals .festival-grid {
+    max-width: 1100px;
+    margin: 45px auto 0;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+
+
+/* FESTIVAL CARD */
+
+.mh-festivals .festival-card {
+    display: block;
+
+    background-color: #f9f4e8;
+
+    border: 1px solid #d7c39d;
+
+    padding: 30px;
+
+    min-height: 260px;
+
+    text-align: left;
+
+    transition: 0.3s;
+
+    visibility: visible;
+    opacity: 1;
+}
+
+.mh-festivals .festival-card:hover {
+    transform: translateY(-6px);
+
+    box-shadow: 0 12px 25px rgba(75, 46, 30, 0.15);
+}
+
+
+/* NUMBER */
+
+.festival-number {
+    color: #a65332;
+
+    font-size: 12px;
+
+    letter-spacing: 2px;
+
+    margin-bottom: 5px;
+}
+
+
+/* ICON */
+
+.festival-icon {
+    font-size: 35px;
+
+    margin: 5px 0 8px;
+}
+
+
+/* TITLE */
+
+.mh-festivals .festival-card h3 {
+    font-family: 'Cormorant Garamond', serif;
+
+    font-size: 32px;
+
+    color: #5c3322;
+
+    margin: 5px 0 12px;
+}
+
+
+/* DESCRIPTION */
+
+.mh-festivals .festival-card p {
+    color: #6b5a4d;
+
+    font-size: 14px;
+
+    line-height: 1.8;
+
+    margin: 0;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 700px) {
+
+    .mh-festivals .festival-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .mh-festivals h2 {
+        font-size: 38px;
+    }
+
+}
+/* =========================================
+   MAHARASHTRA FOOD SECTION
+   ========================================= */
+
+.mh-food {
+    padding: 90px 8%;
+    background-color: #f7f0df;
+    text-align: center;
+}
+
+.mh-food h2 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 45px;
+    color: #5c3322;
+}
+
+.food-intro {
+    max-width: 700px;
+    margin: 0 auto 45px;
+    color: #665449;
+    line-height: 1.8;
+}
+
+
+/* FOOD GRID */
+
+.food-grid {
+    max-width: 1200px;
+    margin: 45px auto 0;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 25px;
+}
+
+
+/* FOOD CARD */
+
+.food-card {
+    background-color: #eee2ca;
+
+    border: 1px solid #d7c39d;
+
+    text-align: left;
+
+    overflow: hidden;
+
+    transition: 0.3s;
+}
+
+.food-card:hover {
+    transform: translateY(-7px);
+
+    box-shadow: 0 12px 25px rgba(75, 46, 30, 0.15);
+}
+
+
+/* FOOD IMAGE */
+
+.food-image {
+    height: 210px;
+
+    background-size: cover;
+    background-position: center;
+}
+
+
+/* FOOD IMAGES */
+
+.puranpoli {
+    background-image:
+        url("https://i.pinimg.com/1200x/63/52/7b/63527b3405341a0a25cf4d87710026af.jpg");
+}
+
+.misal {
+    background-image:
+        url("https://i.pinimg.com/1200x/e6/d9/81/e6d98111b47ec10acd2de84660550a29.jpg");
+}
+
+.vadapav {
+    background-image:
+        url("https://i.pinimg.com/736x/2c/b8/0f/2cb80f693a38e56caa000b25e9783a59.jpg");
+}
+
+.bharlivangi {
+    background-image:
+        url("https://i.pinimg.com/736x/0c/98/f2/0c98f2eb4d3ae09060a6ade6ed0310d2.jpg");
+}
+
+.bhakri {
+    background-image:
+        url("https://i.pinimg.com/1200x/ce/25/8d/ce258d2244d427c5863c560baefc01d4.jpg");
+}
+
+.modak {
+    background-image:
+        url("https://i.pinimg.com/1200x/a7/b9/df/a7b9df3427782a96616857aafe9e2fc2.jpg");
+}
+
+
+/* FOOD CONTENT */
+
+.food-content {
+    padding: 23px;
+}
+
+.food-number {
+    color: #a65332;
+
+    font-size: 12px;
+
+    letter-spacing: 2px;
+}
+
+.food-content h3 {
+    font-family: 'Cormorant Garamond', serif;
+
+    font-size: 30px;
+
+    color: #5c3322;
+
+    margin: 5px 0 10px;
+}
+
+.food-content p {
+    color: #6b5a4d;
+
+    font-size: 14px;
+
+    line-height: 1.8;
+
+    margin: 0;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 900px) {
+
+    .food-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    .food-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .mh-food h2 {
+        font-size: 38px;
+    }
+}
+
+/* =========================================
+   RAJASTHAN PAGE
+   ========================================= */
+
+
+/* ---------- HERO ---------- */
+
+.raj-hero {
+    min-height: 570px;
+
+    display: flex;
+    align-items: center;
+
+    background:
+        linear-gradient(
+            rgba(65, 38, 20, 0.48),
+            rgba(65, 38, 20, 0.48)
+        ),
+        url("https://images.unsplash.com/photo-1477587458883-47145ed94245?auto=format&fit=crop&w=1800&q=80");
+
+    background-size: cover;
+    background-position: center;
+}
+
+.raj-hero-content {
+    width: 750px;
+    margin-left: 10%;
+    color: white;
+}
+
+.raj-hero-content h1 {
+    font-family: 'Cormorant Garamond', serif;
+
+    font-size: 80px;
+
+    line-height: 1;
+
+    color: #f0c778;
+}
+
+.raj-hero-content p:last-child {
+    max-width: 600px;
+
+    line-height: 1.8;
+
+    font-size: 16px;
+
+    color: #f5ead8;
+}
+
+.raj-line {
+    width: 100px;
+
+    height: 2px;
+
+    background-color: #d5ae6d;
+
+    margin: 25px 0;
+}
+
+
+/* ---------- INTRODUCTION ---------- */
+
+.raj-introduction {
+    max-width: 900px;
+
+    margin: auto;
+
+    text-align: center;
+
+    padding: 90px 30px;
+}
+
+.raj-introduction p:not(.section-label) {
+    color: #665449;
+
+    line-height: 1.9;
+
+    margin-bottom: 15px;
+}
+
+
+/* ---------- HERITAGE SECTION ---------- */
+
+.raj-section {
+    padding: 90px 8%;
+
+    background-color: #eee2ca;
+
+    text-align: center;
+}
+
+.raj-section h2,
+.raj-traditions h2,
+.raj-festivals h2,
+.raj-food h2,
+.raj-identity h2 {
+    font-family: 'Cormorant Garamond', serif;
+
+    font-size: 45px;
+
+    color: #5c3322;
+}
+
+
+/* ---------- HERITAGE GRID ---------- */
+
+.raj-grid {
+    max-width: 1200px;
+
+    margin: 45px auto 0;
+
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 30px;
+}
+
+
+/* ---------- HERITAGE CARDS ---------- */
+
+.raj-card {
+    background-color: #f9f4e8;
+
+    border: 1px solid #d7c39d;
+
+    text-align: left;
+
+    transition: 0.3s;
+}
+
+.raj-card:hover {
+    transform: translateY(-7px);
+
+    box-shadow: 0 15px 30px rgba(75, 46, 30, 0.15);
+}
+
+.raj-card-image {
+    height: 270px;
+
+    background-size: cover;
+
+    background-position: center;
+}
+
+
+/* Heritage images */
+
+.amber {
+    background-image:
+        url("https://i.pinimg.com/1200x/31/11/d9/3111d953e604cf0e991cfb099ca01be7.jpg");
+}
+
+.city-palace {
+    background-image:
+        url("https://i.pinimg.com/736x/1f/2c/61/1f2c61d3b4af1b92b6f00ffd96dbf232.jpg");
+}
+
+.mehrangarh {
+    background-image:
+        url("https://i.pinimg.com/736x/cb/ea/bf/cbeabf309a64272d9f1dd69bc0356d50.jpg");
+}
+
+.chittorgarh {
+    background-image:
+        url("https://i.pinimg.com/1200x/e3/aa/13/e3aa131bbe770a704d500736d326f40f.jpg");
+}
+
+
+.raj-card-content {
+    padding: 25px;
+}
+
+.raj-card-content h3 {
+    font-family: 'Cormorant Garamond', serif;
+
+    font-size: 32px;
+
+    color: #5c3322;
+
+    margin-bottom: 10px;
+}
+
+.raj-card-content p {
+    color: #6b5a4d;
+
+    font-size: 14px;
+
+    line-height: 1.8;
+}
+
+
+/* ---------- TRADITIONS ---------- */
+
+.raj-traditions {
+    background-color: #f7f0df;
+
+    padding: 100px 8%;
+}
+
+.raj-tradition-content {
+    max-width: 1100px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 70px;
+
+    align-items: center;
+}
+
+.raj-tradition-text {
+    text-align: left;
+}
+
+.raj-tradition-text p {
+    color: #665449;
+
+    line-height: 1.9;
+}
+
+.raj-left-line {
+    margin-left: 0;
+}
+
+.raj-tradition-text ul {
+    list-style: none;
+
+    margin-top: 25px;
+}
+
+.raj-tradition-text li {
+    padding: 15px 0;
+
+    border-bottom: 1px solid #d9c7a6;
+
+    color: #665449;
+
+    line-height: 1.7;
+}
+
+.raj-tradition-text li strong {
+    color: #a65332;
+}
+
+
+/* ---------- RAJASTHANI ART ---------- */
+
+.raj-art {
+    height: 380px;
+
+    background-color: #783f28;
+
+    position: relative;
+
+    overflow: hidden;
+
+    border: 8px solid #d5b477;
+}
+
+.raj-art::before {
+    content: "";
+
+    position: absolute;
+
+    left: 35px;
+
+    right: 35px;
+
+    top: 35px;
+
+    bottom: 35px;
+
+    border: 1px solid #e5c98d;
+}
+
+.raj-sun {
+    position: absolute;
+
+    top: 55px;
+
+    right: 55px;
+
+    color: #e5c98d;
+
+    font-size: 45px;
+}
+
+.raj-pattern {
+    position: absolute;
+
+    top: 100px;
+
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    color: #e5c98d;
+
+    font-size: 100px;
+}
+
+.raj-dancer {
+    position: absolute;
+
+    bottom: 60px;
+
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    color: #e5c98d;
+
+    font-size: 95px;
+}
+
+
+/* ---------- FESTIVALS ---------- */
+
+.raj-festivals {
+    padding: 90px 8%;
+
+    background-color: #eee2ca;
+
+    text-align: center;
+}
+
+.raj-festivals h2 {
+    font-family: 'Cormorant Garamond', serif;
+
+    font-size: 45px;
+
+    color: #5c3322;
+}
+
+.raj-festivals .festival-grid {
+    max-width: 1100px;
+
+    margin: 45px auto 0;
+
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 25px;
+}
+
+
+/* ---------- FOOD ---------- */
+
+.raj-food {
+    padding: 90px 8%;
+
+    background-color: #f7f0df;
+
+    text-align: center;
+}
+
+.raj-food h2 {
+    font-family: 'Cormorant Garamond', serif;
+
+    font-size: 45px;
+
+    color: #5c3322;
+}
+
+.raj-food .food-grid {
+    max-width: 1200px;
+
+    margin: 45px auto 0;
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 25px;
+}
+
+
+/* Rajasthan food images */
+
+.raj-dalbati {
+    background-image:
+        url("https://i.pinimg.com/736x/2a/9c/74/2a9c742ee20f39a6b0fa5527631db109.jpg");
+}
+
+.raj-gatte {
+    background-image:
+        url("https://i.pinimg.com/736x/f8/0f/61/f80f61a2d6918918ef9a2c750a9d0355.jpg");
+}
+
+.raj-kersangri {
+    background-image:
+        url("https://i.pinimg.com/1200x/86/b1/86/86b18638c4313c2101e4f3bf8baae020.jpg");
+}
+
+.raj-kachori {
+    background-image:
+        url("https://i.pinimg.com/736x/23/45/52/2345520d72def74bcb57a179b38480d9.jpg");
+}
+
+.raj-malpua {
+    background-image:
+        url("https://i.pinimg.com/736x/1c/20/74/1c20743368d9f11e5c674ee5cbb5d051.jpg");
+}
+
+.raj-halwa {
+    background-image:
+        url("https://i.pinimg.com/736x/89/9b/74/899b741a8c09b6effc20d96b80d0fb0e.jpg");
+}
+
+
+/* ---------- IDENTITY ---------- */
+
+.raj-identity {
+    max-width: 850px;
+
+    margin: auto;
+
+    text-align: center;
+
+    padding: 90px 30px;
+}
+
+.raj-identity p:not(.section-label) {
+    color: #665449;
+
+    line-height: 1.9;
+
+    margin-bottom: 15px;
+}
+
+
+/* ---------- RESPONSIVE ---------- */
+
+@media (max-width: 900px) {
+
+    .raj-hero-content {
+        margin-left: 7%;
+
+        margin-right: 7%;
+    }
+
+    .raj-hero-content h1 {
+        font-size: 60px;
+    }
+
+    .raj-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .raj-tradition-content {
+        grid-template-columns: 1fr;
+    }
+
+    .raj-food .food-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .raj-hero {
+        min-height: 500px;
+    }
+
+    .raj-hero-content h1 {
+        font-size: 50px;
+    }
+
+    .raj-section h2,
+    .raj-traditions h2,
+    .raj-festivals h2,
+    .raj-food h2,
+    .raj-identity h2 {
+        font-size: 38px;
+    }
+
+    .raj-food .food-grid {
+        grid-template-columns: 1fr;
+    }
+
+}
+/* =========================================
+   RAJASTHAN - FESTIVALS
+   ========================================= */
+
+.raj-festivals {
+    display: block;
+    width: 100%;
+    padding: 90px 8%;
+    background-color: #eee2ca;
+    text-align: center;
+}
+
+.raj-festivals h2 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 45px;
+    color: #5c3322;
+}
+
+.raj-festivals .festival-intro {
+    max-width: 700px;
+    margin: 0 auto 40px;
+    color: #665449;
+    line-height: 1.8;
+}
+
+.raj-festivals .festival-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+    max-width: 1100px;
+    margin: 40px auto 0;
+}
+
+.raj-festivals .festival-card {
+    display: block;
+    min-height: 250px;
+    padding: 30px;
+    background-color: #f9f4e8;
+    border: 1px solid #d7c39d;
+    text-align: left;
+    visibility: visible;
+    opacity: 1;
+}
+
+.raj-festivals .festival-card h3 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 30px;
+    color: #5c3322;
+    margin: 8px 0 12px;
+}
+
+.raj-festivals .festival-card p {
+    color: #6b5a4d;
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+.raj-festivals .festival-icon {
+    font-size: 32px;
+    margin: 8px 0;
+}
+
+
+/* =========================================
+   RAJASTHAN - FOOD
+   ========================================= */
+
+.raj-food {
+    display: block;
+    width: 100%;
+    padding: 90px 8%;
+    background-color: #f7f0df;
+    text-align: center;
+}
+
+.raj-food h2 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 45px;
+    color: #5c3322;
+}
+
+.raj-food .food-intro {
+    max-width: 700px;
+    margin: 0 auto 40px;
+    color: #665449;
+    line-height: 1.8;
+}
+
+.raj-food .food-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    max-width: 1200px;
+    margin: 40px auto 0;
+}
+
+.raj-food .food-card {
+    display: block;
+    background-color: #eee2ca;
+    border: 1px solid #d7c39d;
+    overflow: hidden;
+    text-align: left;
+    visibility: visible;
+    opacity: 1;
+}
+
+.raj-food .food-image {
+    display: block;
+    height: 210px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+.raj-food .food-content {
+    padding: 23px;
+}
+
+.raj-food .food-content h3 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 30px;
+    color: #5c3322;
+    margin: 6px 0 10px;
+}
+
+.raj-food .food-content p {
+    color: #6b5a4d;
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+
+/* =========================================
+   RAJASTHAN - IDENTITY
+   ========================================= */
+
+.raj-identity {
+    display: block;
+    width: 100%;
+    padding: 90px 30px;
+    background-color: #f7f0df;
+    text-align: center;
+}
+
+.raj-identity h2 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 45px;
+    color: #5c3322;
+}
+
+.raj-identity p:not(.section-label) {
+    max-width: 850px;
+    margin: 0 auto 15px;
+    color: #665449;
+    line-height: 1.9;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 900px) {
+
+    .raj-festivals .festival-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .raj-food .food-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    .raj-food .food-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .raj-festivals h2,
+    .raj-food h2,
+    .raj-identity h2 {
+        font-size: 38px;
+    }
+
+}
