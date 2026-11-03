@@ -221,6 +221,31 @@
                 height: 200px;
             }
         }
+            .traditions .culture-card, .festivals .culture-card, .text-card { overflow:hidden; padding:0; background:#fffaf1; border:1px solid #e5d2b7; text-align:left; }
+        .traditions .culture-card::before, .festivals .culture-card::before, .text-card::before { content:""; display:block; height:210px; background-size:cover; background-position:center; }
+        .traditions .card-content, .festivals .card-content { padding:20px 23px; }
+        .text-card { padding:0 23px 22px; }
+        .text-card h3 { padding:18px 0 0; }
+        .text-card p { padding-bottom:0; }
+        .traditions .culture-card:nth-child(1)::before, .text-card:nth-child(1)::before { background-image:url('https://images.unsplash.com/photo-1508700115892-45e6a8a2f7c4?auto=format&fit=crop&w=900&q=80'); }
+        .traditions .culture-card:nth-child(2)::before, .text-card:nth-child(2)::before { background-image:url('https://images.unsplash.com/photo-1504609813442-a8924e83f76e?auto=format&fit=crop&w=900&q=80'); }
+        .traditions .culture-card:nth-child(3)::before, .text-card:nth-child(3)::before { background-image:url('https://images.unsplash.com/photo-1513364776144-60967b0f800f?auto=format&fit=crop&w=900&q=80'); }
+        .traditions .culture-card:nth-child(4)::before, .text-card:nth-child(4)::before { background-image:url('https://images.unsplash.com/photo-1529139574466-a303027c1d8b?auto=format&fit=crop&w=900&q=80'); }
+        .festivals .culture-card:nth-child(1)::before { background-image:url('https://images.unsplash.com/photo-1604608672516-8d2e8d4e3a5b?auto=format&fit=crop&w=900&q=80'); }
+        .festivals .culture-card:nth-child(2)::before { background-image:url('https://images.unsplash.com/photo-1606293926075-69a00db5f6c8?auto=format&fit=crop&w=900&q=80'); }
+        .festivals .culture-card:nth-child(3)::before { background-image:url('https://images.unsplash.com/photo-1514525253161-7a46d19cd819?auto=format&fit=crop&w=900&q=80'); }
+        .festivals .culture-card:nth-child(4)::before { background-image:url('https://images.unsplash.com/photo-1533174072545-7a4b6ad7a6c3?auto=format&fit=crop&w=900&q=80'); }
+        .text-cards { grid-template-columns:repeat(2,minmax(0,1fr)); }
+        @media(max-width:650px) { .text-cards { grid-template-columns:1fr; } }
+            /* Local state tradition and festival images */
+        .traditions .culture-card:nth-child(1)::before { background-image:url("Assets/Assam/Traditions%20%26%20Folk%20Culture%20of%20Assam/Bihu%20Dance.jpeg"); }
+        .traditions .culture-card:nth-child(2)::before { background-image:url("Assets/Assam/Traditions%20%26%20Folk%20Culture%20of%20Assam/Sattriya%20Dance.jpeg"); }
+        .traditions .culture-card:nth-child(3)::before { background-image:url("Assets/Assam/Traditions%20%26%20Folk%20Culture%20of%20Assam/Muga%20Silk%20Weaving.jpg"); }
+        .traditions .culture-card:nth-child(4)::before { background-image:url("Assets/Assam/Traditions%20%26%20Folk%20Culture%20of%20Assam/Jaapi%20Craft.jpeg"); }
+        .festivals .culture-card:nth-child(1)::before { background-image:url("Assets/Assam/Festivals%20of%20Assam/Rongali%20Bihu.jpeg"); }
+        .festivals .culture-card:nth-child(2)::before { background-image:url("Assets/Assam/Festivals%20of%20Assam/Bhogali%20Bihu.jpeg"); }
+        .festivals .culture-card:nth-child(3)::before { background-image:url("Assets/Assam/Festivals%20of%20Assam/Kongali%20Bihu.jpeg"); }
+        .festivals .culture-card:nth-child(4)::before { background-image:url("Assets/Assam/Festivals%20of%20Assam/Ambubachi%20Mela.jpeg"); }
     </style>
 </head>
 
